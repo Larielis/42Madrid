@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 00:43:00 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/08 00:59:36 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/08 01:06:20 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	is_alpha(char c)
 	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	test1[] = "HelloWorld";
 	char	test2[] = "Hello123";
@@ -53,3 +53,4 @@ int	main(void)
 	printf("Empty string -> %d\n", ft_str_is_alpha(test3));
 	return (0);
 }
+ */
