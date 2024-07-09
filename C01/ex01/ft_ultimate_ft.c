@@ -1,34 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/07 22:05:16 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/09 11:40:57 by racamach         ###   ########.fr       */
+/*   Created: 2024/07/04 22:56:29 by racamach          #+#    #+#             */
+/*   Updated: 2024/07/09 12:18:47 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+void	ft_ultimate_ft(int *********nbr)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
+	*********nbr = 42;
 }
-
-/* int	main(void)
-{
-	char	*str;
-
-	str = "Hola mundo";
-	ft_putstr(str);
-	return (0);
-} */

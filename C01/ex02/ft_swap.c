@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/07 22:05:16 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/09 11:40:57 by racamach         ###   ########.fr       */
+/*   Created: 2024/07/04 23:05:55 by racamach          #+#    #+#             */
+/*   Updated: 2024/07/09 10:07:59 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+void	ft_swap(int *a, int *b)
 {
-	int	i;
+	int	temp;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
-
-/* int	main(void)
-{
-	char	*str;
-
-	str = "Hola mundo";
-	ft_putstr(str);
-	return (0);
-} */
