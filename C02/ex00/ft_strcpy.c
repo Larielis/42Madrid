@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 23:30:31 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/08 00:18:53 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/10 20:10:53 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ char	*ft_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
+	return (dest);
 }
 
 /* int	main(void)
@@ -53,4 +54,5 @@ char	*ft_strcpy(char *dest, char *src)
     printf("Length of copied string: %d\n", ft_strlen(dest));
 
     return 0;
-} */
+}
+ */
