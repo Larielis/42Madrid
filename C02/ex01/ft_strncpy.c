@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 00:23:33 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/08 00:26:19 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/10 20:12:06 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i < n && src[i] != '\0')
@@ -27,6 +27,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		dest[i] = '\0';
 	}
 	dest[i] = '\0';
+	return (dest);
 }
 
 /* int	main(void)
