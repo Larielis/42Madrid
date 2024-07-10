@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 19:25:27 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/10 10:37:37 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/10 12:48:49 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,10 @@ void	ft_to_uppercase(char *c)
 	}
 }
 
-int	main(void)
+/* int	main(void)
 {
-	char	test1[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+	char test1[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
 	printf("%s \n", ft_strcapitalize(test1));
 	return (0);
 }
+ */
