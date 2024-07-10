@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 15:24:15 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/09 17:36:01 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/10 20:12:28 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ int	ft_char_is_printable(char c);
 int	ft_str_is_printable(char *str)
 {
 	int	i;
-	int	size;
 
 	i = 0;
 	while (str[i] != '\0')
