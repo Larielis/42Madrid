@@ -6,18 +6,18 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 18:06:15 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/09 19:27:01 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/16 11:04:55 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
 char	*ft_strlowcase(char *str);
-int		ft_char_is_lowercase(char c);
+int		ft_char_is_uppercase(char c);
 
-int	ft_char_is_lowercase(char c)
+int	ft_char_is_uppercase(char c)
 {
-	return (c >= 'a' && c <= 'z');
+	return (c >= 'A' && c <= 'Z');
 }
 
 char	*ft_strlowcase(char *str)
@@ -27,7 +27,7 @@ char	*ft_strlowcase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (!ft_char_is_lowercase(str[i]))
+		if (ft_char_is_uppercase(str[i]))
 		{
 			str[i] = str[i] + 32;
 		}
