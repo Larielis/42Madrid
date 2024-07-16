@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 11:24:22 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/16 11:23:53 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/16 18:56:16 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ void	ft_memcpy(char *dest, char *src, unsigned int size)
 	}
 }
 
-
+/*/
 int	main(void)
 {
 	char	dest1[50] = "Hello, ";
@@ -140,3 +140,4 @@ int	main(void)
 		printf("Failed\n");
 	return (0);
 }
+*/
