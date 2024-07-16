@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 21:16:00 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/11 11:22:03 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/16 18:54:49 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,56 +49,49 @@ void	ft_memcpy(char *dest, char *src, unsigned int size)
 }
 
 /*
-int main()
+int	main(void)
 {
-    char dest[50] = "Hello, ";
-    char src[] = "World!";
-    char expected_result[50] = "Hello, World!";
+	char	dest[50] = "Hello, ";
+	char	src[] = "World!";
+	char	expected_result[50] = "Hello, World!";
+	char	dest2[50] = "";
+	char	src2[] = "Hello";
+	char	expected_result2[50] = "Hello";
+	char	dest3[50] = "Hello";
+	char	src3[] = "";
+	char	expected_result3[50] = "Hello";
+	char	dest4[50] = "";
+	char	src4[] = "";
+	char	expected_result4[50] = "";
 
-    // Test case 1
-    ft_strcat(dest, src);
-    printf("Test 1: ");
-    if (strcmp(dest, expected_result) == 0)
-        printf("Passed\n");
-    else
-        printf("Failed\n");
-
-    // Test case 2
-    char dest2[50] = "";
-    char src2[] = "Hello";
-    char expected_result2[50] = "Hello";
-
-    ft_strcat(dest2, src2);
-    printf("Test 2: ");
-    if (strcmp(dest2, expected_result2) == 0)
-        printf("Passed\n");
-    else
-        printf("Failed\n");
-
-    // Test case 3
-    char dest3[50] = "Hello";
-    char src3[] = "";
-    char expected_result3[50] = "Hello";
-
-    ft_strcat(dest3, src3);
-    printf("Test 3: ");
-    if (strcmp(dest3, expected_result3) == 0)
-        printf("Passed\n");
-    else
-        printf("Failed\n");
-
-    // Test case 4
-    char dest4[50] = "";
-    char src4[] = "";
-    char expected_result4[50] = "";
-
-    ft_strcat(dest4, src4);
-    printf("Test 4: ");
-    if (strcmp(dest4, expected_result4) == 0)
-        printf("Passed\n");
-    else
-        printf("Failed\n");
-
-    return 0;
+	// Test case 1
+	ft_strcat(dest, src);
+	printf("Test 1: ");
+	if (strcmp(dest, expected_result) == 0)
+		printf("Passed\n");
+	else
+		printf("Failed\n");
+	// Test case 2
+	ft_strcat(dest2, src2);
+	printf("Test 2: ");
+	if (strcmp(dest2, expected_result2) == 0)
+		printf("Passed\n");
+	else
+		printf("Failed\n");
+	// Test case 3
+	ft_strcat(dest3, src3);
+	printf("Test 3: ");
+	if (strcmp(dest3, expected_result3) == 0)
+		printf("Passed\n");
+	else
+		printf("Failed\n");
+	// Test case 4
+	ft_strcat(dest4, src4);
+	printf("Test 4: ");
+	if (strcmp(dest4, expected_result4) == 0)
+		printf("Passed\n");
+	else
+		printf("Failed\n");
+	return (0);
 }
 */

@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 11:57:52 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/11 13:02:30 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/16 18:55:08 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,18 +78,18 @@ void	test_strstr(char *haystack, char *needle)
 
 int	main(void)
 {
-	// Test cases
-	char haystack1[] = "hello world";
-	char haystack2[] = "hello world";
-	char haystack3[] = "hello world";
-	char haystack4[] = "";
-	char haystack5[] = "";
-	char haystack6[] = "abcdef";
-	char haystack7[] = "abcdef";
-	char haystack8[] = "abcdef";
-	char haystack9[] = "abcdef";
-	char haystack10[] = "abcdef";
+	char	haystack1[] = "hello world";
+	char	haystack2[] = "hello world";
+	char	haystack3[] = "hello world";
+	char	haystack4[] = "";
+	char	haystack5[] = "";
+	char	haystack6[] = "abcdef";
+	char	haystack7[] = "abcdef";
+	char	haystack8[] = "abcdef";
+	char	haystack9[] = "abcdef";
+	char	haystack10[] = "abcdef";
 
+	// Test cases
 	test_strstr(haystack1, "world");
 	test_strstr(haystack2, "worlds");
 	test_strstr(haystack3, "");
@@ -100,7 +100,6 @@ int	main(void)
 	test_strstr(haystack8, "f");
 	test_strstr(haystack9, "abcdef");
 	test_strstr(haystack10, "abcdefg");
-
 	return (0);
 }
 */
