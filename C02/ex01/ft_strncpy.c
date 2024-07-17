@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 00:23:33 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/16 11:00:35 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/17 11:21:23 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,5 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		dest[i] = '\0';
 		i++;
 	}
-	dest[i] = '\0';
 	return (dest);
 }
