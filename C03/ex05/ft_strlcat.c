@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 11:49:26 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/17 15:02:50 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/17 15:05:46 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -159,7 +159,7 @@ unsigned int	ft_strlcat_4(char *dest, char *src, unsigned int size)
 	dest_size = ft_strlen(dest);
 	src_size = ft_strlen(src);
 	total_len = 0;
-	while (src[total_len] != '\0' && j < size)
+	while (src[total_len] != '\0' && total_len < size)
 	{
 		dest[dest_size + total_len] = src[total_len];
 		total_len++;
