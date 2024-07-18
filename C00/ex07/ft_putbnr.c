@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/07 20:41:20 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/18 12:57:32 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/18 13:12:28 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_putnbr(int nb)
 {
 	if (nb == INT_MIN)
 	{
-		write(1, "-2147483648", 14);
+		write(1, "-2147483648", 11);
 		return ;
 	}
 	if (nb < 0)

@@ -1,38 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 15:55:53 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/18 13:11:35 by racamach         ###   ########.fr       */
+/*   Created: 2024/07/18 10:17:27 by racamach          #+#    #+#             */
+/*   Updated: 2024/07/18 10:29:31 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <limits.h>
-#include <unistd.h>
+int	ft_iterative_factorial(int nb);
 
-void	ft_putchar(char c)
+int	ft_iterative_factorial(int nb)
 {
-	write(1, &c, 1);
-}
+	int	i;
+	int	result;
 
-void	ft_putnbr(int nb)
-{
-	if (nb == INT_MIN)
-	{
-		write(1, "-2147483648", 11);
-		return ;
-	}
+	i = 1;
+	result = 1;
 	if (nb < 0)
 	{
-		ft_putchar('-');
-		nb = -nb;
+		return (0);
 	}
-	if (nb > 9)
+	while (i <= nb)
 	{
-		ft_putnbr(nb / 10);
+		result = result * i;
+		i++;
 	}
-	ft_putchar((nb % 10) + '0');
+	return (result);
+}
+
+int main()
+{
+	printf("%s")
 }
