@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 10:17:27 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/18 10:29:31 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/18 13:33:41 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_iterative_factorial(int nb)
 	return (result);
 }
 
-int main()
+int	main(void)
 {
-	printf("%s")
+	printf("%s");
 }
