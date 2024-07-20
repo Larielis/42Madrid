@@ -1,44 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putbnr.c                                        :+:      :+:    :+:   */
+/*   ft_srt.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/07 20:41:20 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/19 14:00:30 by racamach         ###   ########.fr       */
+/*   Created: 2024/07/20 21:06:23 by racamach          #+#    #+#             */
+/*   Updated: 2024/07/20 21:41:31 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <limits.h>
-#include <unistd.h>
-
-void	ft_putchar(char c)
+int	ft_sqrt(int nb)
 {
-	write(1, &c, 1);
-}
+	int	temp;
+	int	result;
 
-void	ft_putnbr(int nb)
-{
-	if (nb > 9)
+	result = nb / 2;
+	temp = 0;
+	while (temp != nb)
 	{
-		ft_putnbr(nb / 10);
+		temp = result;
+		result = (nb / temp + temp) / 2;
 	}
-	ft_putchar((nb % 10) + '0');
-}
-
-
-int	main(void)
-{
-	ft_putnbr(123450);
-	ft_putchar('\n');
-	//ft_putnbr(-12345);
-	//ft_putchar('\n');
-	ft_putnbr(0);
-	ft_putchar('\n');
-	//ft_putnbr(INT_MIN);
-	ft_putchar('\n');
-	//ft_putnbr(INT_MAX);
-	ft_putchar('\n');
-	return (0);
+	return (result);
 }
