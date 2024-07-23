@@ -5,40 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 15:36:12 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/23 10:15:03 by racamach         ###   ########.fr       */
+/*   Created: 2024/07/23 20:06:33 by racamach          #+#    #+#             */
+/*   Updated: 2024/07/23 20:12:50 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bsq.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
+#include "ft_point.h"
 
-int	main(int argc, char **argv)
+void	set_point(t_point *point)
 {
-	char	*buffer;
-	t_map	*map;
+	point->x = 42;
+	point->y = 21;
+}
 
-	if (argc != 2)
-	{
-		write(2, "Usage: ./bsq <map_file>\n", 24);
-		return (1);
-	}
-	buffer = read_file(argv[1]);
-	if (!buffer)
-	{
-		write(2, "Error reading file\n", 19);
-		return (1);
-	}
-	map = parse_map(buffer);
-	if (!map)
-	{
-		write(2, "Error parsing map\n", 18);
-		return (1);
-	}
-	find_largest_square(map);
-	print_map(map);
-	free(buffer);
+int	main(void)
+{
+	t_point	point;
+
+	set_point(&point);
 	return (0);
 }

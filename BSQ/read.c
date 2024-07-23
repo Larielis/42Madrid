@@ -6,17 +6,18 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 10:10:17 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/23 10:10:21 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/23 10:17:33 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bsq.h"
 #include <fcntl.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
-extern size_t	ft_strlen(const char *s);
-extern void		*ft_memcpy(void *dst, const void *src, size_t n);
+extern int	ft_strlen(char *str);
+extern void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 char	*read_file(const char *file)
 {
@@ -70,4 +71,16 @@ t_map	*parse_map(char *buffer)
 		line += len + 1;
 	}
 	return (map);
+}
+
+int	ft_strlen(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 12:11:57 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/23 10:10:03 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/23 10:15:51 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ void		find_largest_square(t_map *map);
 void		print_map(t_map *map);
 int			can_place_square(t_map *map, int i, int j, int size);
 void		place_square(t_map *map, int i, int j, int size);
+int			ft_strlen(char *str);
 
 #endif

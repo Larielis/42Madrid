@@ -5,40 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 15:36:12 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/23 10:15:03 by racamach         ###   ########.fr       */
+/*   Created: 2024/07/23 14:37:46 by racamach          #+#    #+#             */
+/*   Updated: 2024/07/23 15:23:59 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bsq.h"
-#include <stdlib.h>
+#include "ft_boolean.h"
 #include <unistd.h>
-#include <stdio.h>
+
+void	ft_putstr(char *str)
+{
+	while (*str)
+		write(1, str++, 1);
+}
+
+t_bool	ft_is_even(int nbr)
+{
+	return ((EVEN(nbr)) ? TRUE : FALSE);
+}
 
 int	main(int argc, char **argv)
 {
-	char	*buffer;
-	t_map	*map;
-
-	if (argc != 2)
-	{
-		write(2, "Usage: ./bsq <map_file>\n", 24);
-		return (1);
-	}
-	buffer = read_file(argv[1]);
-	if (!buffer)
-	{
-		write(2, "Error reading file\n", 19);
-		return (1);
-	}
-	map = parse_map(buffer);
-	if (!map)
-	{
-		write(2, "Error parsing map\n", 18);
-		return (1);
-	}
-	find_largest_square(map);
-	print_map(map);
-	free(buffer);
-	return (0);
+	(void)argv;
+	if (ft_is_even(argc - 1) == TRUE)
+		ft_putstr(EVEN_MSG);
+	// I have an even number of arguments.
+	else
+		ft_putstr(ODD_MSG);
+	// I have an odd number of arguments.
+	return (SUCCESS);
 }
