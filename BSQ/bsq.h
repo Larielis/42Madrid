@@ -6,20 +6,29 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 12:11:57 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/22 15:13:59 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/23 10:10:03 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BSQ_H
 # define BSQ_H
 
-# define EMPTY '.'
-# define OBSTACLE 'o'
-# define FULL 'x'
+# define BUF_SIZE 4096
 
-# define ROWS 9
-# define COLS 28
+typedef struct s_map
+{
+	int		lines;
+	char	empty;
+	char	obstacle;
+	char	full;
+	char	**grid;
+}			t_map;
 
-void	printMaxSubSquare(char map[ROWS][COLS]);
+char		*read_file(const char *file);
+t_map		*parse_map(char *buffer);
+void		find_largest_square(t_map *map);
+void		print_map(t_map *map);
+int			can_place_square(t_map *map, int i, int j, int size);
+void		place_square(t_map *map, int i, int j, int size);
 
 #endif

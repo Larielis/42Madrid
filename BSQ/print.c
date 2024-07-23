@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   print.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 15:36:12 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/23 10:11:30 by racamach         ###   ########.fr       */
+/*   Created: 2024/07/23 10:11:06 by racamach          #+#    #+#             */
+/*   Updated: 2024/07/23 10:11:09 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bsq.h"
-#include <stdlib.h>
+#include <unistd.h>
 
-int	main(int argc, char **argv)
+void	print_map(t_map *map)
 {
-	char	*buffer;
-	t_map	*map;
+	int	i;
 
-	if (argc != 2)
+	i = 0;
+	while (i < map->lines)
 	{
-		write(2, "Usage: ./bsq <map_file>\n", 24);
-		return (1);
+		write(1, map->grid[i], ft_strlen(map->grid[i]));
+		write(1, "\n", 1);
+		i++;
 	}
-	buffer = read_file(argv[1]);
-	if (!buffer)
-	{
-		write(2, "Error reading file\n", 19);
-		return (1);
-	}
-	map = parse_map(buffer);
-	if (!map)
-	{
-		write(2, "Error parsing map\n", 18);
-		return (1);
-	}
-	find_largest_square(map);
-	print_map(map);
-	free(buffer);
-	return (0);
 }
