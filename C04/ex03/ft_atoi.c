@@ -6,7 +6,7 @@
 /*   By: racamach <racamach@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 18:03:44 by racamach          #+#    #+#             */
-/*   Updated: 2024/07/24 00:40:04 by racamach         ###   ########.fr       */
+/*   Updated: 2024/07/24 12:17:59 by racamach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	ft_atoi(char *str)
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
-	return (result *                             sign);
+	return (result * sign);
 }
 
 int	ft_isspace(char c)
